@@ -67,7 +67,7 @@ app.post('/contact', (req, res) => {
 
     sendMail(name, email, content, function(err){
         if(err){
-            req.flash('error', 'Something went wrong :( - Please try again or contact me directly.')
+            req.flash('error', 'Woops. Something went wrong - Please try again or contact me directly.')
             res.redirect('/')
         } else {
             if(name){
@@ -84,3 +84,4 @@ app.post('/contact', (req, res) => {
 app.listen(process.env.PORT, process.env.IP, () => {
 	console.log('Server running')
 })
+
