@@ -1,0 +1,169 @@
+html, body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.landing-container {
+    height: 100%;
+    width: 100%;
+    background-image: url('/resources/ricardo-gomez-angel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 5px 10px 10px rgb(77, 76, 76);
+}
+
+.landing {
+    margin-top: 2.5rem;
+    display: inline-block;
+}
+
+.name, .surname {
+    color: rgb(250, 247, 237);
+    font-size: 4.5rem;
+    font-weight: 500;
+    word-spacing: 1rem;
+    text-shadow: 2px 2px 3px rgb(44, 44, 44);
+    letter-spacing: -0.3rem;
+    display: inline-block;
+    animation-name: h1Splash;
+    animation-duration: 1s;
+}
+
+
+.landing h4 {
+    color: rgb(68, 68, 68);
+    animation-name: h4Splash;
+    animation-duration: 1s;
+}
+
+.landing span {
+    font-weight: 900;
+    padding: 0.4rem;
+}
+
+.navbar-nav li{
+    font-size: 1.2rem;
+    padding: 0 0.8rem;
+}
+
+
+.down-point i{
+    bottom: 3%;
+    left: 50%;
+    margin-left: -0.9rem;
+    color: rgb(68, 68, 68);
+    font-size: 3rem;
+    position: absolute;
+    animation-name: arrowHover;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+}
+
+.down-point:hover {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    background-color: rgb(68, 68, 68);
+    text-align: center;
+}
+
+.dropdown-item {
+    padding: 0.7rem;
+    color: rgb(250, 247, 237);
+}
+
+.dropdown-divider {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.navbar-toggler:focus{
+    outline: none;
+}
+
+.click-away {
+    height: 33rem;
+}
+
+@keyframes arrowHover {
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(1.5rem);
+        color: rgb(107, 106, 106);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes h1Splash {
+
+    0%{
+        transform: translateX(-15rem);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes h4Splash {
+
+    0%{
+        transform: translateX(40rem);
+    }
+
+    100%{
+        display: static;
+        transform: translateX(0);
+    }
+}
+
+
+@media (max-width: 991px){
+
+    .landing h1 {
+        font-size: 3.8rem;
+        font-weight: 500;
+        word-spacing: 0.8rem;
+        letter-spacing: -0.3rem;
+        margin-bottom: 0;
+    }
+
+    .landing {
+        margin-top: 1rem;
+    }
+
+    .other-h4 {
+        font-size: 1.3rem;
+        text-shadow: 1px 1px 1px rgba(173, 171, 171, 0.514);
+    }
+}
+
+@media (max-width: 767px){
+
+    .landing h1 {
+        font-size: 3.2rem;
+        font-weight: 500;
+        word-spacing: 0.8rem;
+        letter-spacing: -0.2rem;
+    }
+
+    .other-h4 {
+        font-size: 1rem;
+        margin: 0.5rem 0 0 0;
+    }
+
+    .surname {
+        display: none;
+    }
+
+}

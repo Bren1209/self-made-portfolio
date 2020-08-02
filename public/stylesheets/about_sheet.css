@@ -1,0 +1,55 @@
+.about-container {
+    background-color: #b9b5b0ad;
+}
+
+.about-container img{
+    filter: opacity(0.8);
+    height: 5rem;
+}
+
+.about-content {
+    margin: 0;
+    padding: 5rem 5rem 2rem 5rem;
+    text-align: center;
+}
+
+.about-content h5 {
+    margin-top: 1rem;
+    color: rgb(46, 45, 45);
+    font-weight: 700;
+}
+
+.about-content p{
+    font-size: 1rem;
+    color: rgb(68, 68, 68);
+    padding: 0 1.5rem;
+}
+
+.about-content hr {
+    width: 50%;
+    background-color: rgb(173, 169, 169);
+}
+
+.cv-button {
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0 3.5rem 0;
+}
+
+.cv-button a{
+    color: rgb(214, 211, 211);
+    text-decoration: none;
+}
+
+@media (max-width: 1080px) {
+    .about-content {
+        padding: 5rem 2rem 2rem 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 991px){
+    .about-content button{
+        margin-bottom: 3rem;
+    }
+}

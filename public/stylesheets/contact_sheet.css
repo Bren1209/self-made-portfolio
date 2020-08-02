@@ -1,0 +1,130 @@
+.contact-container {
+    background-color: rgb(46, 45, 45);
+    color: #ffffffcc;
+    padding-bottom: 3rem;
+    box-shadow: 0 0 12px 10px rgb(112, 111, 111);
+}
+
+.contact {
+    padding: 4rem 2rem 2rem 2rem;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    float: left;
+}
+
+.contact img {
+    border-radius: 2%;
+    width: 82%;
+    filter: opacity(0.85);
+    margin-left: 3rem;
+}
+
+
+.hey {
+    font-weight: 600;
+}
+
+.contact h4 {
+    font-weight: 400;
+}
+
+.push-text {
+    padding-left: 3rem;
+}
+
+.contact-container button {
+    font-weight: 700;
+}
+
+.or {
+    text-align: center;
+    font-weight: 500;
+}
+
+.direct-contact {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.contact-container a {
+    color: #ffffffcc;
+    text-decoration: underline;
+}
+
+.contact-container a:hover {
+    color: #817d7dcc;
+    text-decoration: underline;
+    transition-duration: 100ms;
+}
+
+form {
+    filter: opacity(0.85);
+}
+
+.divider {
+    border-right: 1px solid #63626283;
+}
+
+input {
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    width: 90%;
+}
+
+textarea {
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 1125px){
+    .contact img {
+        width: 100%;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px){
+    .contact img {
+        width: 55%;
+        margin: 0;
+    }
+
+    .contact p{
+        float: none;
+    }
+
+    .push-text {
+        padding: 1.5rem 0 0 0;
+        text-align: center;
+    }
+
+    .contact {
+        padding: 2rem 2rem 2rem 2rem;
+    }
+
+    .contact-container i:nth-child(1){
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 588px){
+    .contact img {
+        width: 65%;
+    }
+}
+
+@media (max-width: 450px){
+    .contact img {
+        width: 70%;
+    }
+
+    .contact-container i {
+        font-size: 1.7rem;
+    }
+}
