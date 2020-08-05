@@ -48,6 +48,9 @@ html, body {
     padding: 0 0.8rem;
 }
 
+.navbar {
+    padding-left: 0;
+}
 
 .down-point i{
     bottom: 3%;
@@ -145,6 +148,14 @@ html, body {
     .other-h4 {
         font-size: 1.3rem;
         text-shadow: 1px 1px 1px rgba(173, 171, 171, 0.514);
+    }
+
+    .nav-item {
+        width: 40%;
+    }
+
+    .dropdown {
+        width: 80%;
     }
 }
 

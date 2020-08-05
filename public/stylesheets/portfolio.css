@@ -52,13 +52,14 @@ html, body {
     margin-top: 1.8rem;
 }
 
-.first-showcase-row .col-lg-4 {
+.first-showcase-row .col-lg-4, .second-showcase-row .col-lg-4 {
     margin: 1.5rem 0;
 }
 
-.second-showcase-row .col-lg-4 {
+.first-showcase-row .col-md-6, .second-showcase-row .col-md-6 {
     margin: 1.5rem 0;
 }
+
 
 .card-body {
     background-color: rgb(46, 45, 45);
@@ -133,9 +134,10 @@ audio {
         margin-right: 4rem;
     }
 
-    .second-showcase-row{
-        display: none;
+    .card {
+        width: 100%;
     }
+
 }
 
 @media (max-width: 991px){
@@ -145,14 +147,6 @@ audio {
 
     .carousel-item {
         padding: 1rem 5rem;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .second-showcase-row{
-        display: block;
     }
 
     .audio-clip {
