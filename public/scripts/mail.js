@@ -4,8 +4,8 @@ require('dotenv').config()
 
 const auth = {
     auth: {
-        api_key: 'api key here',
-        domain: 'domain here'
+        api_key: 'api_key_here',
+        domain: 'domain_here'
     }
 }
 

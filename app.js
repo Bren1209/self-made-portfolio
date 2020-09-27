@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const sendMail = require('./public/scripts/mail');
 const flash = require('connect-flash');
 const session = require('express-session')
+var date = new Date().getFullYear();
 
 const app = express();
 
@@ -17,6 +18,11 @@ app.use(session({
     resave: false,
     saveUninitialized: false
 }))
+
+app.use(function(req, res, next){
+    res.locals.date = date;
+    next();
+})
 
 app.get('/', (req, res) => {
     res.render('index', {flashMessageSuccess: req.flash('success'), flashMessageError: req.flash('error')})
@@ -81,7 +87,7 @@ app.post('/contact', (req, res) => {
     });
 })
 
-app.listen(process.env.PORT, process.env.IP, () => {
+app.listen(process.env.PORT || '8080', process.env.IP, () => {
 	console.log('Server running')
 })
 
