@@ -8,7 +8,7 @@ html, body {
 .landing-container {
     height: 100%;
     width: 100%;
-    background-image: url('/resources/ricardo-gomez-angel.jpg');
+    background-image: url('/resources/ricardo-gomez-angel-compressed.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0 5px 10px 10px rgb(77, 76, 76);
